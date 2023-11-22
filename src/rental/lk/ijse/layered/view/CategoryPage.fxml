@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental.lk.ijse.layered.controller.CategoryPageController">
+   <children>
+      <Label fx:id="txtCategoryTitle" layoutX="14.0" layoutY="4.0" prefHeight="41.0" prefWidth="121.0" text="Category Page">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCategoryStatus" layoutX="317.0" layoutY="258.0" onAction="#selectStatus" prefHeight="31.0" prefWidth="218.0" promptText="Category Status" visibleRowCount="5" />
+      <JFXTextField fx:id="txtCategorySearch" labelFloat="true" layoutX="67.0" layoutY="258.0" onKeyPressed="#keyUpSearch" prefHeight="31.0" prefWidth="218.0" promptText="Category Search" />
+      <TableView fx:id="tblCategory" layoutX="67.0" layoutY="343.0" onMouseClicked="#getItem" prefHeight="389.0" prefWidth="1027.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="211.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="294.0" text="Name" />
+            <TableColumn fx:id="colDesc" prefWidth="259.0" text="Description" />
+            <TableColumn fx:id="colStatus" prefWidth="262.0" text="Status" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnClearSearch" layoutX="823.0" layoutY="260.0" onAction="#clearSearch" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CLEAR" />
+      <Line endX="953.0" layoutX="137.0" layoutY="241.0" startX="-100.0" />
+      <Label layoutX="37.0" layoutY="220.0" prefHeight="21.0" prefWidth="71.0" text="Filters">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCategoryName" labelFloat="true" layoutX="67.0" layoutY="71.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Category Name" />
+      <JFXTextField fx:id="txtCategoryDesc" labelFloat="true" layoutX="67.0" layoutY="147.0" onKeyPressed="#keyUpDesc" prefHeight="31.0" prefWidth="218.0" promptText="Category Description" />
+      <JFXButton fx:id="btnDelete" layoutX="964.0" layoutY="153.0" onAction="#deleteCategory" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="DELETE" />
+      <JFXButton fx:id="btnUpdate" layoutX="823.0" layoutY="153.0" onAction="#updateCategory" prefHeight="31.0" prefWidth="130.0" styleClass="updateButton" stylesheets="@style/Common.css" text="UPDATE" />
+      <JFXButton fx:id="btnAdd" layoutX="823.0" layoutY="153.0" onAction="#addCategory" prefHeight="31.0" prefWidth="130.0" styleClass="saveButton" stylesheets="@style/Common.css" text="ADD" />
+      <JFXButton fx:id="btnClearText" layoutX="681.0" layoutY="153.0" onAction="#clearText" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CLEAR" />
+      <JFXButton fx:id="btnSearch" layoutX="681.0" layoutY="260.0" onAction="#search" prefHeight="31.0" prefWidth="130.0" styleClass="searchButton" stylesheets="@style/Common.css" text="SEARCH" />
+      <JFXComboBox fx:id="cmbCategoryStatusField" layoutX="427.0" layoutY="71.0" prefHeight="31.0" prefWidth="218.0" promptText="Category Status" visibleRowCount="2" />
+   </children>
+</AnchorPane>

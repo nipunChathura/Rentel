@@ -1,0 +1,28 @@
+.background{
+    -fx-background-color: #0066cc;
+}
+
+.navButton{
+    -fx-background-color: #fafafa;
+    -fx-border-color: #0022ff;
+    -fx-border-width: 2px;
+    -fx-text-fill: #0022ff;
+}
+.navButton:hover {
+    -fx-background-color: #3d8adc;
+    -fx-text-fill: #ffffff;
+}
+
+.navBackground{
+    -fx-background-color: white;
+    -fx-border-style: solid inside;"
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+}
+
+#timeLabel{
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 5;
+}

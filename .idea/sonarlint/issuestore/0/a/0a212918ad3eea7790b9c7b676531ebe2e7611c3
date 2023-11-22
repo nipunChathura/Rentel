@@ -1,0 +1,33 @@
+
+v
+java:S4144à"ZUpdate this method so that its implementation is not identical to "keyUpDesc" on line 218.(É¯ššøÿÿÿÿ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(şÒãûÿÿÿÿ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(â‹ùíıÿÿÿÿ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(Üíİ¿
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(şÒãûÿÿÿÿ
+S	java:S106o"9Replace this use of System.out or System.err by a logger.(â‹ùíıÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(şÒãûÿÿÿÿ
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(â‹ùíıÿÿÿÿ
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(Üíİ¿
+R
+java:S2696›"6Make the enclosing method "static" or remove this set.(Øßãêıÿÿÿÿ
+R
+java:S2696œ"6Make the enclosing method "static" or remove this set.(èñÆ¯üÿÿÿÿ
+M
+java:S2696"6Make the enclosing method "static" or remove this set.(éÖ×Ì
+M
+java:S2696 "6Make the enclosing method "static" or remove this set.(×»’ò
+S
+java:S1068R"8Remove this unused "searchCategoryStatus" private field.(ùÄƒ¬ûÿÿÿÿ
+K
+java:S1068T"6Remove this unused "textCategoryStatus" private field.(‹õG
+u
+java:S2293Ğ"YReplace the type specification in this constructor call with the diamond operator ("<>").(Èéº‰ÿÿÿÿÿ
+u
+java:S2293Ñ"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ÿ³˜ïıÿÿÿÿ
+u
+java:S2293Ò"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÉÎÃ»ûÿÿÿÿ
+p
+java:S2293Ó"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸ïÔó
+c
+java:S1192^"HDefine a constant instead of duplicating this literal "Success" 3 times.(şÒãûÿÿÿÿ

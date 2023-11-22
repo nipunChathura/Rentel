@@ -1,0 +1,35 @@
+.background{
+    -fx-background-color: #0066cc;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #0066cc;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-padding: 3px 3px 3px 35px;
+    -fx-text-inner-color: #000000;
+}
+
+.button {
+    -fx-background-color: #0066cc;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: white;
+    -fx-border-color: #0066cc;
+    -fx-text-fill:#0066cc;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+}
+
+.exit {
+    -fx-background-color: #ff0000;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.exit:hover {
+    -fx-background-color: #c45a5a;
+    -fx-border-width: 0px;
+}

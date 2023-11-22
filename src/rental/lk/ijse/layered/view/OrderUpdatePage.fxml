@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental.lk.ijse.layered.controller.OrderUpdatePageController">
+   <children>
+      <Label fx:id="txtCategoryTitle" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="206.0" text="Order Page Update Page">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerName" labelFloat="true" layoutX="87.0" layoutY="81.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtCustomerAddress" labelFloat="true" layoutX="346.0" layoutY="81.0" onKeyPressed="#keyUpAddress" prefHeight="31.0" prefWidth="218.0" promptText="Customer Address" />
+      <JFXTextField fx:id="txtCustomerPhoneNumber" labelFloat="true" layoutX="607.0" layoutY="81.0" onKeyPressed="#keyUpphoneNumber" prefHeight="31.0" prefWidth="218.0" promptText="Customer Phone No" />
+      <JFXTextField fx:id="txtCustomerNic" labelFloat="true" layoutX="866.0" layoutY="81.0" onKeyPressed="#keyUpNic" prefHeight="31.0" prefWidth="218.0" promptText="Customer NIC" />
+      <JFXTextField fx:id="txtTotalPrice" labelFloat="true" layoutX="87.0" layoutY="141.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Total Price" />
+      <JFXTextField fx:id="txtTotalExtraPrice" labelFloat="true" layoutX="346.0" layoutY="141.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Total Extra Price" />
+      <JFXComboBox fx:id="cmdOrderStatus" layoutX="607.0" layoutY="141.0" onAction="#setItem" prefHeight="31.0" prefWidth="218.0" promptText="Order Status" visibleRowCount="2" />
+      <Line endX="953.0" layoutX="157.0" layoutY="221.0" startX="-100.0" />
+      <Label layoutX="57.0" layoutY="200.0" prefHeight="21.0" prefWidth="97.0" text="Order Details">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmdItemName" layoutX="87.0" layoutY="249.0" onAction="#setItem" prefHeight="31.0" prefWidth="218.0" promptText="Item Name" visibleRowCount="2" />
+      <JFXDatePicker fx:id="txtOrderReturnDate" layoutX="879.0" layoutY="249.0" onAction="#setDate" promptText="Item Return Date" />
+      <JFXTextField fx:id="txtItemPricePreDay" labelFloat="true" layoutX="346.0" layoutY="249.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Item Price Pre Day" />
+      <JFXTextField fx:id="txtItemPriceExtraDay" labelFloat="true" layoutX="608.0" layoutY="249.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Item Price Extra Day" />
+      <JFXButton fx:id="btnModifyItem" layoutX="781.0" layoutY="312.0" onAction="#modifyItem" prefHeight="31.0" prefWidth="130.0" stylesheets="@style/Common.css" text="MODIFY">
+         <styleClass>
+            <String fx:value="searchButton" />
+            <String fx:value="updateButton" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnRemoveItem" layoutX="935.0" layoutY="312.0" onAction="#removeItem" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="REMOVE" />
+      <JFXDatePicker fx:id="txtOrderActualReturnDate" layoutX="87.0" layoutY="314.0" onAction="#setActualDate" promptText="Item Actual Return Date" />
+      <JFXComboBox fx:id="cmdOrderDetailsStatus" layoutX="346.0" layoutY="314.0" onAction="#setODStatus" prefHeight="31.0" prefWidth="218.0" promptText="Order Details Status" visibleRowCount="2" />
+      <TableView fx:id="tblOrderDetails" layoutX="55.0" layoutY="384.0" onMouseClicked="#getItem" prefHeight="288.0" prefWidth="1042.0">
+        <columns>
+          <TableColumn fx:id="colOrderDetailsId" prefWidth="96.0" text="O_D_ID" />
+            <TableColumn fx:id="colItemName" prefWidth="196.0" text="Item Name" />
+            <TableColumn fx:id="colReturnDate" prefWidth="201.0" text="Return Date" />
+            <TableColumn fx:id="colActualReturnDate" prefWidth="228.0" text="Actual Return Date" />
+            <TableColumn fx:id="colAmount" prefWidth="97.0" text="Amount" />
+            <TableColumn fx:id="colExtraAmount" prefWidth="122.0" text="Extra Amount" />
+            <TableColumn fx:id="colStatus" prefWidth="91.0" text="Status" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnPlaceOrder" layoutX="774.0" layoutY="689.0" onAction="#UpdateOrder" prefHeight="35.0" prefWidth="137.0" stylesheets="@style/Common.css" text="MODIFY ORDER">
+         <styleClass>
+            <String fx:value="searchButton" />
+            <String fx:value="updateButton" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="935.0" layoutY="689.0" onAction="#cancelOrder" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CANCEL" />
+      <Label layoutX="424.0" layoutY="692.0" text="Total Price = ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTotalPrice" layoutX="575.0" layoutY="683.0" prefHeight="53.0" prefWidth="156.0" text="100.00">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="692.0" text="Extra Price = ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtExtraPrice" layoutX="240.0" layoutY="683.0" prefHeight="53.0" prefWidth="130.0" text="100.00">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

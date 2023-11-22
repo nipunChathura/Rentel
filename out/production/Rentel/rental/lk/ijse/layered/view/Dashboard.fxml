@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental.lk.ijse.layered.controller.DashboardController">
+   <children>
+      <BorderPane fx:id="bp" prefHeight="800.0" prefWidth="1400.0">
+         <left>
+            <VBox prefHeight="740.0" prefWidth="250.0" styleClass="background" stylesheets="@style/dashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnNavHome" layoutX="10.0" layoutY="10.0" onMouseClicked="#loadHomePage" prefHeight="50.0" prefWidth="250.0" styleClass="navButton" stylesheets="@style/dashboard.css" text="Home" />
+                  <JFXButton fx:id="btnNavCategory" onMouseClicked="#loadCategoryPage" prefHeight="50.0" prefWidth="250.0" styleClass="navButton" stylesheets="@style/dashboard.css" text="Category" />
+                  <JFXButton fx:id="btnNavItem" layoutX="10.0" layoutY="10.0" onMouseClicked="#loadItemPage" prefHeight="50.0" prefWidth="250.0" styleClass="navButton" stylesheets="@style/dashboard.css" text="Item" />
+                  <JFXButton fx:id="btnNavOrder" layoutX="10.0" layoutY="60.0" onMouseClicked="#loadOrderPage" prefHeight="50.0" prefWidth="250.0" styleClass="navButton" stylesheets="@style/dashboard.css" text="Order" />
+               </children></VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" styleClass="background" stylesheets="@style/dashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="6.0" prefHeight="40.0" prefWidth="493.0" text="LAKSALA TRADING ADMIN PORTAL" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font></Label>
+                  <Label fx:id="txtDatetime" layoutX="1201.0" layoutY="10.0" prefHeight="31.0" prefWidth="185.0" text="Date" />
+               </children>
+            </AnchorPane>
+         </top></BorderPane>
+   </children>
+</AnchorPane>

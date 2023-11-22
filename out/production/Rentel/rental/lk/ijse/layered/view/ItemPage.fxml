@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental.lk.ijse.layered.controller.ItemPageController">
+   <children>
+      <Label fx:id="txtItemTitle" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="52.0" text="Item -">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtItemTitleParameter" layoutX="66.0" layoutY="14.0" prefHeight="41.0" prefWidth="81.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemName" labelFloat="true" layoutX="67.0" layoutY="71.0" onKeyReleased="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Item Name" />
+      <JFXTextField fx:id="txtItemPreDayPrice" labelFloat="true" layoutX="397.0" layoutY="71.0" onKeyReleased="#keyUpPreDay" prefHeight="31.0" prefWidth="218.0" promptText="Item Pre Day Price" />
+      <JFXTextField fx:id="txtItemExtraPrice" labelFloat="true" layoutX="727.0" layoutY="71.0" onKeyReleased="#keyUpExtraDay" prefHeight="31.0" prefWidth="218.0" promptText="Item Extra Price" />
+      <JFXComboBox fx:id="cmbCategory" layoutX="67.0" layoutY="138.0" prefHeight="31.0" prefWidth="218.0" promptText="Category Name" visibleRowCount="5" />
+      <JFXButton fx:id="btnAdd" layoutX="836.0" layoutY="143.0" onAction="#addItem" prefHeight="31.0" prefWidth="130.0" styleClass="saveButton" stylesheets="@style/Common.css" text="ADD" />
+      <JFXButton fx:id="btnDelete" layoutX="976.0" layoutY="143.0" onMouseClicked="#deleteItem" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="DELETE" />
+      <JFXButton fx:id="btnUpdate" layoutX="836.0" layoutY="143.0" onMouseClicked="#updateItem" prefHeight="31.0" prefWidth="130.0" styleClass="updateButton" stylesheets="@style/Common.css" text="UPDATE" />
+      <TableView fx:id="tblItem" layoutX="67.0" layoutY="340.0" onMouseClicked="#getItem" prefHeight="383.0" prefWidth="1013.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="93.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="194.0" text="Name" />
+            <TableColumn fx:id="colPerDayPrice" prefWidth="188.0" text="Per Day Price" />
+            <TableColumn fx:id="colExtraDayPrice" prefWidth="204.0" text="Extra Day Price" />
+            <TableColumn fx:id="colCategory" prefWidth="178.0" text="Categoty" />
+            <TableColumn fx:id="colStatus" prefWidth="151.0" text="Status" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtItemSearch" labelFloat="true" layoutX="67.0" layoutY="268.0" onKeyPressed="#keyUpSearch" prefHeight="31.0" prefWidth="218.0" promptText="Item Search" />
+      <JFXComboBox fx:id="cmbSearchCategory" layoutX="327.0" layoutY="268.0" onAction="#selectCategorySearch" prefHeight="31.0" prefWidth="218.0" promptText="Category" visibleRowCount="5" />
+      <JFXComboBox fx:id="cmbItemStatus1" layoutX="587.0" layoutY="268.0" prefHeight="31.0" prefWidth="218.0" promptText="Item Status" visibleRowCount="5" />
+      <Line endX="953.0" layoutX="167.0" layoutY="251.0" startX="-100.0" />
+      <Label layoutX="67.0" layoutY="230.0" prefHeight="21.0" prefWidth="71.0" text="Filters">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClear" layoutX="696.0" layoutY="143.0" onAction="#clearText" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CLEAR" />
+      <JFXButton fx:id="btnClearSearch" layoutX="973.0" layoutY="270.0" onAction="#clearSearch" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CLEAR" />
+      <JFXButton fx:id="btnSearch" layoutX="831.0" layoutY="270.0" onAction="#search" prefHeight="31.0" prefWidth="130.0" styleClass="searchButton" stylesheets="@style/Common.css" text="SEARCH" />
+      <JFXComboBox fx:id="cmbItemStatus" layoutX="397.0" layoutY="138.0" prefHeight="31.0" prefWidth="218.0" promptText="Item Status" />
+   </children>
+</AnchorPane>

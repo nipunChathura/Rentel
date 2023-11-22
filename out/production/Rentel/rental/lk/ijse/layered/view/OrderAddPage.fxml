@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental.lk.ijse.layered.controller.OrderAddPageController">
+   <children>
+      <JFXTextField fx:id="txtCustomerName" labelFloat="true" layoutX="77.0" layoutY="81.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Customer Name" />
+      <Label fx:id="txtCategoryTitle" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="164.0" text="Order Page Add Page">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerAddress" labelFloat="true" layoutX="336.0" layoutY="81.0" onKeyPressed="#keyUpAddress" prefHeight="31.0" prefWidth="218.0" promptText="Customer Address" />
+      <JFXTextField fx:id="txtCustomerPhoneNumber" labelFloat="true" layoutX="597.0" layoutY="81.0" onKeyPressed="#keyUpPhoneNumber" prefHeight="31.0" prefWidth="218.0" promptText="Customer Phone No" />
+      <JFXTextField fx:id="txtCustomerNic" labelFloat="true" layoutX="856.0" layoutY="81.0" onKeyPressed="#keyUpNic" prefHeight="31.0" prefWidth="218.0" promptText="Customer NIC" />
+      <Line endX="953.0" layoutX="147.0" layoutY="181.0" startX="-100.0" />
+      <Label layoutX="47.0" layoutY="160.0" prefHeight="21.0" prefWidth="97.0" text="Order Details">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmdItemName" layoutX="77.0" layoutY="209.0" onAction="#setItem" prefHeight="31.0" prefWidth="218.0" promptText="Item Name" visibleRowCount="5" />
+      <JFXDatePicker fx:id="txtOrderReturnDate" layoutX="604.0" layoutY="209.0" onAction="#setDate" promptText="Item Return Date" />
+      <JFXTextField fx:id="txtItemPricePreDay" labelFloat="true" layoutX="336.0" layoutY="209.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Item Price Pre Day" />
+      <TableView fx:id="tblOrderDetails" layoutX="78.0" layoutY="341.0" onMouseClicked="#getItem" prefHeight="336.0" prefWidth="995.0">
+        <columns>
+          <TableColumn fx:id="colItemId" prefWidth="146.0" text="Item Id" />
+          <TableColumn fx:id="colItemName" prefWidth="199.99998474121094" text="Item Name" />
+            <TableColumn fx:id="colReturnDate" prefWidth="208.0" text="Return Date" />
+            <TableColumn fx:id="colPreDayPrice" prefWidth="247.0" text="Item Pre Day Price" visible="false" />
+            <TableColumn fx:id="colAmount" prefWidth="421.0" text="Amount" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAddItem" layoutX="771.0" layoutY="282.0" onAction="#addItem" prefHeight="31.0" prefWidth="130.0" stylesheets="@style/Common.css" text="ADD">
+         <styleClass>
+            <String fx:value="searchButton" />
+            <String fx:value="saveButton" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnClearCustomerContent" layoutX="925.0" layoutY="136.0" onAction="#clearCustomerContent" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CLEAR" />
+      <JFXButton fx:id="btnRemoveItem" layoutX="925.0" layoutY="282.0" onAction="#removeItem" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="REMOVE" />
+      <JFXButton fx:id="btnPlaceOrder" layoutX="771.0" layoutY="701.0" onAction="#placeOrder" prefHeight="31.0" prefWidth="130.0" stylesheets="@style/Common.css" text="PLACE ORDER">
+         <styleClass>
+            <String fx:value="searchButton" />
+            <String fx:value="saveButton" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="925.0" layoutY="701.0" onAction="#cancelOrder" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CANCEL" />
+      <Label layoutX="182.0" layoutY="683.0" text="Total Price = ">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTotalPrice" layoutX="416.0" layoutY="683.0" prefHeight="53.0" prefWidth="205.0" text="100.00">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemPrice" labelFloat="true" layoutX="856.0" layoutY="209.0" onKeyPressed="#keyUpName" prefHeight="31.0" prefWidth="218.0" promptText="Item Price " />
+   </children>
+</AnchorPane>

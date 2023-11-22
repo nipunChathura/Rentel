@@ -1,0 +1,4 @@
+db.connection.driver_class=com.mysql.jdbc.Driver
+db.connection.url=jdbc:mysql://localhost:3306/rent
+db.connection.username=root
+db.connection.password=nipun

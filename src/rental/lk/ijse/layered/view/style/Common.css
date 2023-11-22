@@ -1,0 +1,48 @@
+.background{
+    -fx-background-color: #dfe4f3;
+}
+
+.searchButton{
+    -fx-border-color: blue;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+.searchButton:hover{
+    -fx-background-color: blue;
+    -fx-border-radius: 5px;
+}
+
+.saveButton{
+    -fx-border-color: forestgreen;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.saveButton:hover{
+    -fx-background-color: forestgreen;
+    -fx-border-radius: 5px;
+}
+
+.updateButton{
+    -fx-border-color: gold;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+.updateButton:hover{
+    -fx-background-color: gold;
+    -fx-border-radius: 5px;
+}
+
+.deleteButton{
+    -fx-border-color: orangered;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+.deleteButton:hover{
+    -fx-background-color: orangered;
+    -fx-border-radius: 5px;
+}

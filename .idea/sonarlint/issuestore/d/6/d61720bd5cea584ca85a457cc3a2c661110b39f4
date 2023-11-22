@@ -1,0 +1,48 @@
+
+z
+java:S4144£"^Update this method so that its implementation is not identical to "keyUpExtraDay" on line 285.(É¯ššøÿÿÿÿ
+t
+java:S4144©"^Update this method so that its implementation is not identical to "keyUpExtraDay" on line 285.(Ä„ë	
+V	java:S125G"<This block of commented-out lines of code should be removed.(ã¾‘Üÿÿÿÿÿ
+P	java:S125J"<This block of commented-out lines of code should be removed.(» Ñ
+O	java:S106…"9Replace this use of System.out or System.err by a logger.(½™”é
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(ÍèÕçÿÿÿÿÿ
+T	java:S106Ž"9Replace this use of System.out or System.err by a logger.(þÒãûÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(â‹ùíýÿÿÿÿ
+O	java:S106“"9Replace this use of System.out or System.err by a logger.(ÜíÝ¿
+Š
+java:S1130·"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(æÌ˜ûÿÿÿÿÿ
+ˆ
+java:S1130·"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(æÌ˜ûÿÿÿÿÿ
+•
+java:S1130·"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(æÌ˜ûÿÿÿÿÿ
+T	java:S106Ã"9Replace this use of System.out or System.err by a logger.(þÒãûÿÿÿÿ
+T	java:S106Å"9Replace this use of System.out or System.err by a logger.(â‹ùíýÿÿÿÿ
+O	java:S106Ö"9Replace this use of System.out or System.err by a logger.(½™”é
+T	java:S106×"9Replace this use of System.out or System.err by a logger.(—·Šüÿÿÿÿ
+W	java:S125Ü"<This block of commented-out lines of code should be removed.(ù“Š·ûÿÿÿÿ
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(ÈíŽïÿÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(þÒãûÿÿÿÿ
+T	java:S106’"9Replace this use of System.out or System.err by a logger.(â‹ùíýÿÿÿÿ
+O	java:S106˜"9Replace this use of System.out or System.err by a logger.(ÜíÝ¿
+W	java:S125î"<This block of commented-out lines of code should be removed.(ù“Š·ûÿÿÿÿ
+R
+java:S2696€"6Make the enclosing method "static" or remove this set.(ÛØŽÔþÿÿÿÿ
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(¥œK
+M
+java:S2696‚"6Make the enclosing method "static" or remove this set.(ä»½
+M
+java:S2696„"6Make the enclosing method "static" or remove this set.(Ý®„
+M
+java:S2696†"6Make the enclosing method "static" or remove this set.(ÕÑåç
+R
+java:S2696ˆ"6Make the enclosing method "static" or remove this set.(ÁÛ…üÿÿÿÿ
+L
+java:S2696Š"6Make the enclosing method "static" or remove this set.(¥œK
+R
+java:S2696‹"6Make the enclosing method "static" or remove this set.(ëÈÛ¸üÿÿÿÿ
+U
+java:S1144®"9Remove this unused private "modifyPageController" method.(ù€þýÿÿÿÿ
+d
+java:S1192Ž"HDefine a constant instead of duplicating this literal "Success" 3 times.(þÒãûÿÿÿÿ

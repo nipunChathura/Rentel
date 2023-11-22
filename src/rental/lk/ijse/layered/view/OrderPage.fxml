@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rental.lk.ijse.layered.controller.OrderPageController">
+   <children>
+      <Label fx:id="txtCategoryTitle" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="164.0" text="Order Page Add Page">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClearSearch" layoutX="963.0" layoutY="200.0" onAction="#clearSearch" prefHeight="31.0" prefWidth="130.0" styleClass="deleteButton" stylesheets="@style/Common.css" text="CLEAR" />
+      <JFXButton fx:id="btnSearch" layoutX="821.0" layoutY="200.0" onAction="#search" prefHeight="31.0" prefWidth="130.0" styleClass="searchButton" stylesheets="@style/Common.css" text="SEARCH" />
+      <JFXComboBox fx:id="cmbOrderStatus" layoutX="347.0" layoutY="132.0" onAction="#selectStatus" prefHeight="31.0" prefWidth="218.0" promptText="Order Status" visibleRowCount="5" />
+      <JFXTextField fx:id="txtOrderSearch" labelFloat="true" layoutX="66.0" layoutY="132.0" onKeyPressed="#keyUpSearch" prefHeight="31.0" prefWidth="218.0" promptText="Order Search" />
+      <JFXDatePicker fx:id="txtOrderStartDate" layoutX="636.0" layoutY="132.0" onAction="#setDate" promptText="Order Start Date" />
+      <JFXDatePicker fx:id="txtOrderEndDate" layoutX="888.0" layoutY="132.0" onAction="#setDate" promptText="Order End Date" />
+      <TableView fx:id="tblOrder" layoutX="24.0" layoutY="259.0" prefHeight="464.0" prefWidth="1099.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="135.0" text="Order Date" />
+          <TableColumn fx:id="colName" prefWidth="138.0" text="Customer Name" />
+            <TableColumn fx:id="colAddress" prefWidth="148.0" text="Customer Address" />
+            <TableColumn fx:id="colPhoneNumber" prefWidth="168.0" text="Customer Phone No" />
+            <TableColumn fx:id="colNic" prefWidth="142.0" text="Customer NIC" />
+            <TableColumn fx:id="colTotalPrice" prefWidth="128.0" text="Total Price" />
+            <TableColumn fx:id="colExtraPrice" prefWidth="122.0" text="Extra Price" />
+            <TableColumn fx:id="colStatus" prefWidth="104.0" text="Status" />
+            <TableColumn fx:id="colId" text="ID" visible="false" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="963.0" layoutY="57.0" onAction="#AddOrder" prefHeight="31.0" prefWidth="130.0" styleClass="saveButton" stylesheets="@style/Common.css" text="ADD ORDER" />
+   </children>
+</AnchorPane>
